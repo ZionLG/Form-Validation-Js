@@ -3,5 +3,51 @@
   <head>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main id="container">
+      <form novalidate>
+        <div>
+          <label for="user-email">
+            <span>Email:</span>
+            <input type="email" name="user-email" id="user-email" required />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </div>
+        <div>
+          <label for="user-country">
+            <span>Coutnry:</span>
+            <input type="text" name="user-country" id="user-country" required />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </div>
+        <div>
+          <label for="user-zip">
+            <span>Zip Code:</span>
+            <input type="number" name="user-zip" id="user-zip" required />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </div>
+        <div>
+          <label for="user-pass">
+            <span>Password:</span>
+            <input type="password" name="user-pass" id="user-pass" required />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </div>
+        <div>
+          <label for="user-pass-conf">
+            <span>Confirm Password:</span>
+            <input
+              type="password"
+              name="user-pass-conf"
+              id="user-pass-conf"
+              required
+            />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </div>
+        <button type="submit" id="submit-user-form">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>
